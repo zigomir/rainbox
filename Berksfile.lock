@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "postgresql": {
+      "locked_version": "3.3.4",
+      "git": "https://github.com/opscode-cookbooks/postgresql.git",
+      "ref": "5800238828b443725442fe510ec4f5308ed9ce8b"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    }
+  }
+}

@@ -7,6 +7,7 @@ Learning Chef and later Docker.
 ```bash
 gem install berkshelf
 vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
 ```
 
 ## Resources

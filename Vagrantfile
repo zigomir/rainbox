@@ -17,12 +17,15 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, :inline => 'locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8'
   config.vm.provision :shell, :inline => 'apt-get update --fix-missing'
 
+  config.omnibus.chef_version = :latest
   config.berkshelf.enabled = true
+
   config.vm.provision :chef_solo do |chef|
       chef.add_recipe "postgresql::server"
       chef.add_recipe "postgresql::ruby" # this one is needed for postgres-conf which will create new database
       chef.add_recipe "database"
       chef.add_recipe "postgres-conf"
+      chef.add_recipe "golang"
 
       chef.json = {
         'postgresql' => {

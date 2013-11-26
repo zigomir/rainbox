@@ -1,20 +1,16 @@
 {
   "sources": {
-    "database": {
-      "locked_version": "1.5.2"
+    "rainbox": {
+      "path": "."
     },
     "postgresql": {
-      "locked_version": "3.3.4",
-      "git": "https://github.com/opscode-cookbooks/postgresql.git",
-      "ref": "5800238828b443725442fe510ec4f5308ed9ce8b"
-    },
-    "postgres-conf": {
-      "path": "./cookbooks/postgres-conf"
+      "locked_version": "3.3.4"
     },
     "golang": {
-      "locked_version": "1.1.2",
-      "git": "https://github.com/buth/chef-golang.git",
-      "ref": "f9e8588b02aaea4259cac01c165f61390814f2c1"
+      "locked_version": "1.1.2"
+    },
+    "database": {
+      "locked_version": "1.5.2"
     },
     "mysql": {
       "locked_version": "4.0.6"
@@ -33,6 +29,24 @@
     },
     "apt": {
       "locked_version": "2.3.0"
+    },
+    "git": {
+      "locked_version": "2.7.0"
+    },
+    "dmg": {
+      "locked_version": "2.0.8"
+    },
+    "yum": {
+      "locked_version": "2.4.2"
+    },
+    "windows": {
+      "locked_version": "1.11.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.4.0"
     }
   }
 }

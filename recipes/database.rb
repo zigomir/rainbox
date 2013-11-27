@@ -1,4 +1,8 @@
-postgresql_database 'development' do
+include_recipe 'postgresql::server'
+include_recipe 'postgresql::ruby'
+include_recipe 'database'
+
+postgresql_database node[:rainbox][:database][:dbname] do
   connection(
     :host     => '127.0.0.1',
     :port     => 5432,

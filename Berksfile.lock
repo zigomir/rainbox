@@ -3,11 +3,6 @@
     "rainbox": {
       "path": "."
     },
-    "golang": {
-      "locked_version": "1.2.0",
-      "git": "https://github.com/NOX73/chef-golang",
-      "ref": "6e92c78aa760316139a4dea6c4fec8444864c341"
-    },
     "postgresql": {
       "locked_version": "3.3.4"
     },
@@ -20,17 +15,8 @@
     "openssl": {
       "locked_version": "1.1.0"
     },
-    "database": {
-      "locked_version": "1.5.2"
-    },
-    "mysql": {
-      "locked_version": "4.0.6"
-    },
-    "aws": {
-      "locked_version": "1.0.0"
-    },
-    "xfs": {
-      "locked_version": "1.1.0"
+    "golang": {
+      "locked_version": "1.2.0"
     },
     "rbenv": {
       "locked_version": "1.6.5"

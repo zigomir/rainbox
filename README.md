@@ -8,6 +8,9 @@ Learning Chef and later Docker.
 gem install berkshelf
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
+
+
+git clone git://github.com/zigomir/rainbox.git ~/.rainbox --recursive
 ```
 
 ## Process
@@ -18,12 +21,12 @@ Then run `breks install`.
 
 ## Resources
 
-- http://berkshelf.com/
-- http://www.captnswing.net/2013/01/how-i-use-vagrant-with-chef-solo.html
-- http://misheska.com/blog/2013/06/16/getting-started-writing-chef-cookbooks-the-berkshelf-way/
-- https://coderwall.com/p/j72egw
+- [Berkshelf.com](http://berkshelf.com/)
+- [misheska.com](http://misheska.com/blog/2013/06/16/getting-started-writing-chef-cookbooks-the-berkshelf-way/)
+- [misheska/myface](https://github.com/misheska/myface)
 
-
-## Plan:
+## Plan/TODO:
 
 Setup fresh Ubuntu with docker and then install stuff with docker, create an image, use images for prod servers
+
+Use this for Postgres, seems better: http://phlippers.net/chef-postgresql/

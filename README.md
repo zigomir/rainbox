@@ -10,6 +10,12 @@ vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
 ```
 
+## Process
+
+Add recipes to `metadata.rb` with `depends` and then include them in `recipes/default.rb` with `include_recipe`.
+
+Then run `breks install`.
+
 ## Resources
 
 - http://berkshelf.com/

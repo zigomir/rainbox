@@ -31,6 +31,30 @@
     },
     "xfs": {
       "locked_version": "1.1.0"
+    },
+    "rbenv": {
+      "locked_version": "1.6.5"
+    },
+    "git": {
+      "locked_version": "2.7.0"
+    },
+    "dmg": {
+      "locked_version": "2.0.8"
+    },
+    "yum": {
+      "locked_version": "2.4.2"
+    },
+    "windows": {
+      "locked_version": "1.11.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.4.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
     }
   }
 }

@@ -4,13 +4,70 @@ Learning Chef and later Docker.
 
 ## Setup
 
+Install [VirtualBox](https://www.virtualbox.org/) and then [Vagrant](http://www.vagrantup.com/).
+
 ```bash
 gem install berkshelf
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
+git clone git://github.com/zigomir/rainbox.git ~/.rainbox && cd ~/.rainbox
+berks install
+```
+
+## Usage
+
+```bash
+cd /path/to/project
+~/.rainbox/vagrantify.sh .
+
+# edit the vagrantconfig.yml
+vagrant up
+```
+
+Create `Berksfile` in your project root and put this line into it
+
+```
+cookbook 'rainbox', git: 'git@github.com:zigomir/rainbox.git'
+```
+
+```bash
+berks install
+vagrant up
+```
 
 
-git clone git://github.com/zigomir/rainbox.git ~/.rainbox --recursive
+### vagrantconfig.yml for project
+
+```yaml
+# Default config for Vagrant
+# use vagrantconfig_local.yml to override these settings and put it to .gitignore
+
+project_name: rainbox
+box_name: precise64
+box_url: http://files.vagrantup.com/precise64.box
+memory: 512
+guest_ip: 192.168.1.10
+
+ports:
+  - {guest: 3000, host: 3000}
+
+chef_conf:
+  databases:
+    - postgres
+
+  packages:
+    - vim
+
+  languages:
+    ruby:
+      version: 2.0.0-p353
+
+```
+
+Vagrantfile
+
+```ruby
+eval(File.open("#{Dir.home}/.rainbox/Vagrantfile").read, binding, __FILE__, __LINE__)
 ```
 
 ## Process

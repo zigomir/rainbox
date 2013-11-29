@@ -25,7 +25,8 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision :shell, :inline => 'echo Europe/Ljubljana | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata'
   config.vm.provision :shell, :inline => 'apt-get update --fix-missing'
-  config.vm.provision :shell, :inline => 'cp /vagrant/files/default/lang.sh /etc/profile.d/lang.sh'
+  config.vm.provision :shell, :inline =>
+    "echo 'export LANGUAGE=\"en_US.UTF-8\"\nexport LANG=\"en_US.UTF-8\"\nexport LC_ALL=\"en_US.UTF-8\"' > /etc/profile.d/lang.sh && chmod +x /etc/profile.d/lang.sh"
 
   config.omnibus.chef_version = :latest
   config.berkshelf.enabled = true

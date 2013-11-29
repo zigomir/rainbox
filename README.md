@@ -4,13 +4,25 @@ Learning Chef and later Docker.
 
 ## Setup
 
+Install [VirtualBox](https://www.virtualbox.org/) and then [Vagrant](http://www.vagrantup.com/).
+
 ```bash
 gem install berkshelf
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
+```
 
+## Usage
 
-git clone git://github.com/zigomir/rainbox.git ~/.rainbox --recursive
+Create `Berksfile` in your project root and put this line into it
+
+```
+cookbook 'rainbox', git: 'git@github.com:zigomir/rainbox.git'
+```
+
+```bash
+berks install
+vagrant up
 ```
 
 ## Process

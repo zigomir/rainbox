@@ -1,4 +1,4 @@
-default[:rainbox][:ruby][:version] = node[:chef_conf].fetch('languages', {}).fetch('ruby', {}).fetch('version', {})
+default[:rainbox][:ruby][:version] = '2.1.0-preview2'
 
 # postgres settings
 default['postgresql']['config']['listen_addresses'] = '*'

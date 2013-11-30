@@ -1,4 +1,4 @@
-default[:rainbox][:ruby][:version]  = node[:chef_conf].fetch('languages', {}).fetch('ruby', {}).fetch('version', {})
+default[:rainbox][:ruby][:version] = node[:chef_conf].fetch('languages', {}).fetch('ruby', {}).fetch('version', {})
 
 # rbenv settings
 default[:rbenv][:user]  = 'vagrant'

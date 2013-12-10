@@ -59,7 +59,6 @@ chef_conf:
   languages:
     ruby:
       version: 2.0.0-p353
-
 ```
 
 ### Run it!
@@ -74,7 +73,7 @@ vagrant up
 
 Add recipes to `metadata.rb` with `depends` and then include them in `recipes/default.rb` with `include_recipe`.
 
-Then run `breks install`.
+Then run `berks install`.
 
 ## Resources
 

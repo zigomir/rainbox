@@ -10,7 +10,11 @@ Install [VirtualBox](https://www.virtualbox.org/) and then [Vagrant](http://www.
 gem install berkshelf
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-omnibus
-git clone git://github.com/zigomir/rainbox.git ~/.rainbox && cd ~/.rainbox
+git clone git://github.com/zigomir/rainbox.git ~/.rainbox
+
+# Windows users
+cd C:\Users\<my-user>
+git clone git://github.com/zigomir/rainbox.git .rainbox
 ```
 
 ## Usage for your projects

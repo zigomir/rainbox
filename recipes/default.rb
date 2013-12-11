@@ -22,3 +22,7 @@ end
 if chef_conf.fetch('languages', {}).keys.include?('ruby')
   include_recipe 'rainbox::ruby'
 end
+
+if chef_conf.fetch('servers', {}).include?('apache2')
+  include_recipe 'apache2'
+end

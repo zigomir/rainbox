@@ -50,6 +50,9 @@ ports:
   - {guest: 3000, host: 3000}
 
 chef_conf:
+  servers:
+    - apache2
+
   databases:
     - postgres
 
